@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eeeeee;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+header {
+  text-align: center;
+}
+
+.iss-info {
+  /* background: #dbd4d4; */
+  padding: 0.5em;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  /* border: 1px solid #eeeeee;
+  border-radius: 10px; */
+}
+
+p {
+  margin-top: 0;
+}
+
+span {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.maps-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /* background: #615a5a; */
+  margin: auto;
+  padding: 1rem 0;
+  max-width: 800px;
+  /* border: 1px solid blue;
+  border-radius: 10px; */
+}
+
+/* @media (min-width: 700px) {
+  .maps-container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+} */
+
+.single-map {
+  background: white;
+  margin: 0.5rem;
+  /* padding: 0.5rem; */
+}
+
+.single-map h4 {
+  display: inline-block;
+  margin: 0;
+  padding: 0.5em 0.5em 0;
+  color: #333333;
+}
+
+#iss-map,
+#iss-map-zoomed {
+  height: 240px;
+  width: 340px;
+  margin: 0.5rem;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: small;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  border-top: 1px dotted gray;
+}

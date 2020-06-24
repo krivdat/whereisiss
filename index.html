@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+      crossorigin=""
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script
+      src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+      integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+      crossorigin=""
+    ></script>
+
+    <title>Where is the ISS?</title>
+  </head>
+  <body>
+    <header>
+      <h1>Where is the ISS?</h1>
+    </header>
+
+    <div class="iss-info">
+      <p>
+        latitude: <span id="lat"></span>, longitude: <span id="lon"></span>,
+        velocity: <span id="vel"></span>
+      </p>
+      <button type="button" id="stop-btn">STOP UPDATE</button>
+    </div>
+
+    <div class="maps-container">
+      <div class="single-map">
+        <h4>world view</h4>
+        <div id="iss-map"></div>
+      </div>
+      <div class="single-map">
+        <h4>zoomed view</h4>
+        <div id="iss-map-zoomed"></div>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        This website is a result of my ongoing process of learning JavaScript,
+        particularly working with data and web APIs according to the
+        <a
+          href="https://www.youtube.com/playlist?list=PLRqwX-V7Uu6YxDKpFzf_2D84p0cyk4T7X"
+          >Youtube series</a
+        >
+        made by
+        <a href="https://www.youtube.com/user/shiffman">The Coding Train</a>.
+      </p>
+      <p>
+        Maps are produced using
+        <a href="https://leafletjs.com/index.html">Leaflet JS library</a> and
+        <a href="https://wheretheiss.at/w/developer">"Where the ISS at?"</a>
+        REST API.
+      </p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
